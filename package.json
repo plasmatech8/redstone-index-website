@@ -31,6 +31,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fortawesome/fontawesome-free": "^6.2.0",
 		"@svelteuidev/composables": "^0.7.5",
 		"@svelteuidev/core": "^0.7.5",
 		"radix-icons-svelte": "^1.2.1"

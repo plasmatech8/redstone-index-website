@@ -13,6 +13,7 @@
 	} from '@svelteuidev/core';
 	import { isDarkTheme } from '$lib/stores';
 	import { MagnifyingGlass, Person, Cube } from 'radix-icons-svelte';
+	import '@fortawesome/fontawesome-free/js/all.min.js';
 
 	function toggleTheme() {
 		$isDarkTheme = !$isDarkTheme;
@@ -36,14 +37,14 @@
 				</div>
 				<!-- right -->
 				<div class="h-full md:order-3 flex justify-end align-middle flex-grow gap-6">
-					<button class="flex gap-2 text-white items-center h-9">
+					<Button color="red">
 						<Cube slot="leftIcon" size={20} />
 						Builds
-					</button>
-					<button class="flex gap-1 text-white items-center h-9">
+					</Button>
+					<Button color="red">
 						<Person slot="leftIcon" size={20} />
-						Sign Up
-					</button>
+						Sign In
+					</Button>
 				</div>
 				<!-- middle -->
 				<div class="w-full md:w-auto flex-grow">
