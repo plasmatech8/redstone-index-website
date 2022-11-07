@@ -27,33 +27,33 @@
 >
 	<AppShell>
 		<Header slot="header" height="" class="bg-red-500">
-			<nav class="flex flex-wrap container mx-auto p-3 h-full">
+			<nav class="flex flex-wrap container mx-auto p-3 h- gap-2 md:gap-0 items-center">
 				<!-- left -->
-				<div class="w-1/2 h-full md:w-1/3 text-white">
+				<div class=" h-full text-white flex-grow">
 					<h1>Redstone Index</h1>
 				</div>
 				<!-- right -->
-				<div class="w-1/2 h-full md:order-3 md:w-1/3 flex justify-end">
-					<Button class="h-full text-white" variant="subtle">
-						<Cube slot="leftIcon" />
+				<div class="h-full md:order-3 flex justify-end align-middle flex-grow gap-6">
+					<button class="flex gap-2 text-white items-center h-9">
+						<Cube slot="leftIcon" size={20} />
 						Builds
-					</Button>
-					<Button class="h-full text-white" variant="subtle">
-						<Person slot="leftIcon" />
+					</button>
+					<button class="flex gap-1 text-white items-center h-9">
+						<Person slot="leftIcon" size={20} />
 						Sign Up
-					</Button>
+					</button>
 				</div>
 				<!-- middle -->
-				<div class="w-full md:w-1/3">
+				<div class="w-full md:w-auto flex-grow">
 					<form on:submit|preventDefault class="flex h-full">
 						<input
 							type="search"
 							name=""
 							id=""
-							class="h-full w-full p-2 pl-7 bg-red-700 rounded-l-md outline-none placeholder:text-gray-300 text-md text-white"
+							class="h-9 w-full p-2 pl-7 bg-red-700 rounded-l-md outline-none placeholder:text-gray-300 text-md text-white"
 							placeholder="Search Redstone Index"
 						/>
-						<button class="h-full w-10 grid place-items-center bg-red-700 rounded-r-md">
+						<button class="h-9 w-10 grid place-items-center bg-red-700 rounded-r-md">
 							<MagnifyingGlass class="text-white" size={23} />
 						</button>
 					</form>
