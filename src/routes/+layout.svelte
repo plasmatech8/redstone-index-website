@@ -29,8 +29,10 @@
 		<Header slot="header" height="" class="bg-red-500">
 			<nav class="flex flex-wrap container mx-auto p-3 h- gap-2 md:gap-0 items-center">
 				<!-- left -->
-				<div class=" h-full text-white flex-grow">
-					<h1>Redstone Index</h1>
+				<div class="h-full text-white flex-grow">
+					<a href="/">
+						<h1 class="select-none">Redstone Index</h1>
+					</a>
 				</div>
 				<!-- right -->
 				<div class="h-full md:order-3 flex justify-end align-middle flex-grow gap-6">
