@@ -25,7 +25,7 @@
 		<Text weight="bold">Build Title</Text>
 		<Group position="apart">
 			<Text size="xs">By <a href="/user/plasmatech8" class="underline">plasmatech8</a></Text>
-			<img src="https://i.pravatar.cc/300" alt="user avatar" class="rounded-full w-10" />
+			<img src="https://i.pravatar.cc/300?{useId()}" alt="user avatar" class="rounded-full w-10" />
 		</Group>
 	</Group>
 	<!-- Image -->
