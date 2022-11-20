@@ -16,19 +16,10 @@
 	import { MagnifyingGlass, Person, Cube } from 'radix-icons-svelte';
 	import '@fortawesome/fontawesome-free/js/all.min.js';
 
-	function toggleTheme() {
-		$isDarkTheme = !$isDarkTheme;
-	}
-
 	const buttonOverrides: CSS = { backgroundColor: '#ef4343' };
 </script>
 
-<SvelteUIProvider
-	ssr
-	withNormalizeCSS
-	withGlobalStyles
-	themeObserver={$isDarkTheme ? 'dark' : 'light'}
->
+<SvelteUIProvider ssr withNormalizeCSS withGlobalStyles>
 	<AppShell>
 		<Header slot="header" height="" class="bg-red-500">
 			<nav class="flex flex-wrap container mx-auto p-3 h- gap-2 md:gap-0 items-center">
@@ -44,7 +35,7 @@
 						<Cube slot="leftIcon" size={20} />
 						Builds
 					</Button>
-					<Button override={buttonOverrides}>
+					<Button color="red" override={buttonOverrides}>
 						<Person slot="leftIcon" size={20} />
 						Sign In
 					</Button>
