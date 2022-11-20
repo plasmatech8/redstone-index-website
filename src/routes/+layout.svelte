@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import '../app.css';
 	import {
 		SvelteUIProvider,
@@ -9,7 +9,8 @@
 		Title,
 		Divider,
 		TextInput,
-		Button
+		Button,
+		type CSS
 	} from '@svelteuidev/core';
 	import { isDarkTheme } from '$lib/stores';
 	import { MagnifyingGlass, Person, Cube } from 'radix-icons-svelte';
@@ -18,6 +19,8 @@
 	function toggleTheme() {
 		$isDarkTheme = !$isDarkTheme;
 	}
+
+	const buttonOverrides: CSS = { backgroundColor: '#ef4343' };
 </script>
 
 <SvelteUIProvider
@@ -37,11 +40,11 @@
 				</div>
 				<!-- right -->
 				<div class="h-full md:order-3 flex justify-end align-middle flex-grow gap-6">
-					<Button color="red">
+					<Button color="red" override={buttonOverrides}>
 						<Cube slot="leftIcon" size={20} />
 						Builds
 					</Button>
-					<Button color="red">
+					<Button override={buttonOverrides}>
 						<Person slot="leftIcon" size={20} />
 						Sign In
 					</Button>
