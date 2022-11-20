@@ -1,6 +1,6 @@
 <script>
-	import { Grid, Container, Button, Group, NativeSelect, Modal, Badge } from '@svelteuidev/core';
-	import { Person, Stack } from 'radix-icons-svelte';
+	import BuildCard from '$lib/BuildCard.svelte';
+	import { Button, Group, Modal, Badge } from '@svelteuidev/core';
 	let opened = false;
 </script>
 
@@ -23,9 +23,11 @@
 	<Badge>Popular last 7 days</Badge>
 </Group>
 
-<Group position="center">
+<Group position="center" align="baseline">
 	{#each Array(30) as _}
-		<div class="bg-red-500 h-72 w-72">A</div>
+		<div class="w-96">
+			<BuildCard />
+		</div>
 	{/each}
 </Group>
 
