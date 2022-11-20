@@ -1,18 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import {
-		SvelteUIProvider,
-		fns,
-		AppShell,
-		Navbar,
-		Header,
-		Title,
-		Divider,
-		TextInput,
-		Button,
-		type CSS
-	} from '@svelteuidev/core';
-	import { isDarkTheme } from '$lib/stores';
+	import { SvelteUIProvider, AppShell, Header, Button, type CSS } from '@svelteuidev/core';
 	import { MagnifyingGlass, Person, Cube } from 'radix-icons-svelte';
 	import '@fortawesome/fontawesome-free/js/all.min.js';
 
