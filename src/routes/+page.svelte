@@ -24,7 +24,7 @@
 </Group>
 
 <Group position="center" align="baseline">
-	{#each Array(30) as _}
+	{#each Array(20) as _}
 		<div class="w-96">
 			<BuildCard />
 		</div>
